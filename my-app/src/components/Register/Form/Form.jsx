@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import './Form.css'
 import axios from 'axios';
@@ -8,7 +8,7 @@ export default function Form() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     
-    const history = useHistory();
+    const history = useNavigate();
 
     function handleEmailChange(event){
         setEmail(event.target.value);

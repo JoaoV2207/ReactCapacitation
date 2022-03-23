@@ -1,0 +1,36 @@
+.Login {
+    height: 100vh;
+    font-family: Nunito Sans;
+  }
+  
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex: 1;
+  }
+  
+  .Texto {
+    width: 60%;
+    height: 100%;
+  }
+  
+  .form {
+    color: #dddddd;
+    width: 40%;
+    height: 100%;
+    background-color: #f6f6f6;
+  }
+  
+  /* Sumindo com o Welcome no mobile */
+  
+  @media screen and (max-width: 960px) {
+    .Texto {
+      display: none;
+    }
+  
+    .form {
+      width: 100%;
+    }
+  }
+  
